@@ -1,0 +1,726 @@
+/* ========================================extra CSS ========================================= */
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    transition: all 0.3s;
+}
+
+a:hover{
+    color: #cda45e !important;
+}
+
+/* =============================================== navbar starts here ===================================== */
+
+.header{
+    background-color: #000000ba;
+    padding: 5px 0;
+    border-bottom: 0.2px solid #cda45e5d;
+}
+
+.restaurant{
+    font-weight: 100;
+}
+
+.collapse{
+    margin-left: -2%;
+}
+
+.nav-item a{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 10px !important;
+}
+
+.header .navbar ul li
+ a{
+    color: white;
+}
+
+.fa-bars{
+    color: white;
+    font-size: 25px;
+}
+
+.dropdown-menu ul li a{
+    color: black;
+}
+
+.book{
+    background-color: transparent;
+    border-radius: 30px;
+    font-size: 14px;
+    border: 2px solid #cda45e;
+    padding: 8px 30px !important;
+}
+
+.book:hover{
+    background-color: #cda45e !important;
+}
+
+/* ================================================ section 1 starts here ===================================== */
+
+.section1{
+    background: linear-gradient(rgba(11,10,10,0.5), rgba(11, 10, 10, 0.5)),url(../Images/hero-bg.jpg) fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.section1 .inside1 .row{
+    padding: 25% 0 18% 0;
+}
+
+                    /* -------- data 1 ----------- */
+
+.section1 .inside1 .data1 h1{
+    color: white;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.section1 .inside1 .data1 h1 span{
+    color: #cda45e;
+}
+
+.section1 .inside1 .data1 h5{
+    color: white;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 5%;
+}
+
+                /* ------ data 2 ------ */
+
+.section1 .inside1 .data2 .outside{
+    height: 100px;
+    width: 100px;
+    background-color: #cda45e8e;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.section1 .inside1 .data2 .outside .ring{
+    height: 75px;
+    width: 75px;
+    border: 3px solid #cda45e;
+    border-radius: 50%;
+    position: absolute;
+    animation: animate 2s linear infinite;
+}
+
+@keyframes animate{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(2);
+    }
+}
+
+.section1 .inside1 .data2 a{
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    color: white;
+    font-size: 30px;
+    background-color: #cda45e;
+    text-decoration: none;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.section1 .inside1 .data2 a:hover{
+    height: 100px;
+    width: 100px;
+}
+
+.section1 .inside1 .data2 a .hide{
+    color: white;
+}
+
+.section1 .inside1 .data2 a .show{
+    transition: all 0.3s linear;
+}
+
+.section1 .inside1 .data2 a:hover .show{
+    transform: scale(5);
+    color: white;
+    opacity: 0;
+}
+
+/* ============================================== section 2 starts here ======================================
+ */
+
+.section2{
+    background: linear-gradient(rgba(2, 2, 2, 0.8), rgba(2, 2, 2, 0.8)),url(../Images/about-bg.jpg) fixed;
+    background-position: center;
+    background-size: cover;
+    padding: 80px 0;
+}
+
+.section2 .inside1  .data1 h4{
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.section2 .inside1  .data1 p{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.section2 .inside1  .data1 p i{
+    font-size: 20px;
+    margin-right: 1%;
+    color: #cda45e;
+}
+
+                    /* ------ data 2 ------- */
+
+.section2 .inside1 .data2 img{
+    border: 4px solid rgba(255, 255, 255, 0.221);
+    transition: all 0.2s linear;
+}
+
+.section2 .inside1 .data2 img:hover{
+    transform: scale(1.03);
+}
+
+.section2 .inside1 .data2::before{
+    position: absolute;
+    left: 35px;
+    top: 25px;
+    width: 60px;
+    height: 60px;
+    z-index: 5;
+    content: "";
+    border-left: 5px solid #cda45e;
+    border-top: 5px solid #cda45e;
+    transition: 0.5s;
+}
+
+.section2 .inside1 .data2:hover::before{
+    top: 5px;
+    left: 15px;
+}
+
+.section2 .inside1 .data2::after{
+    position: absolute;
+    bottom: 25px;
+    right: 35px;
+    width: 60px;
+    height: 60px;
+    z-index: 5;
+    content: "";
+    border-right: 5px solid #cda45e;
+    border-bottom: 5px solid #cda45e;
+    transition: 0.5s;
+}
+
+.section2 .inside1 .data2:hover::after{
+    bottom: 5px;
+    right: 15px;
+}
+
+/* ================================================== section 3 starts here ======================================== */
+
+.section3{
+    background: #0c0b09;
+}
+
+.unique{
+    color: #aaaaaa;
+    position: relative;
+    font-size: 14px;
+}
+
+.unique::after{
+    content: '';
+    width: 120px;
+    height: 1px;
+    background-color: #aaaaaa;
+    top: 50%;
+    left: 80px;
+    position: absolute;
+}
+
+.same{
+    color: #cda45e;
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+                    /* ------ inside 2 ------ */
+
+.section3 .inside2 .check{
+    background-color: #1a1814;
+    padding: 50px 30px;
+    transition: all 0.5s;
+
+}
+
+.section3 .inside2 .check:hover{
+    background-color: rgb(214, 132, 50);
+}
+
+.section3 .inside2 .check:hover p{
+    color: white;
+}
+.section3 .inside2 .check:hover h3{
+    color: white;
+    margin-top: -5%;
+}
+
+.section3 .inside2 .check h3{
+    font-family: 'Open Sans', sans-serif;
+    color: #cda45e;
+    font-weight: 900;
+    transition: all 0.5s;
+}
+
+.section3 .inside2 .check h4{
+    color: rgba(255, 255, 255, 0.8);
+    margin: 20px 0;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
+
+.section3 .inside2 .check p{
+    font-size: 15px;
+    color: #aaaaaa;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* ================================================== section 4 starts here ======================================== */
+
+.section4{
+    background-color: #1a1814;
+}
+
+.section4 .data2 a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Playfair Display', serif;
+    padding: 0 10px;
+    font-weight: 500;
+}
+
+.section4 .data3 img{
+    border-radius: 50%;
+    border: 5px solid #aaaaaa46;
+}
+
+.section4 .data3 h7{
+    color: #ffffff;
+    margin-left: -5%;
+    font-weight: 600;
+}
+
+.section4 .data3 h7 a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.section4 .data3 h7 span{
+    color: #cda45e;
+    margin-left: 1%;
+}
+
+.section4 .data3 h8{
+    color: #aaaaaa;
+    display: block;
+    font-size: 14px;
+    font-style: italic;
+    margin-left: -5%;
+}
+
+/* ================================================== section 5 starts here ======================================== */
+
+.section5{
+    background-color: #0c0b09;
+}
+
+.section5 .inside .data2 .inn .cut{
+    padding: 0;
+    border-right: 2px solid #cda45e;
+}
+
+.section5 .inside .data2 .inn .cut a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.section5 .inside .data2 .inn a:hover{
+    background-color: #cda45e;
+    color: black !important;
+}
+
+                    /* ------- inn2 ------- */
+
+.section5 .inside .data2 .inn2 h4{
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.section5 .inside .data2 .inn2 p{
+    color: #aaaaaa;
+    font-size: 15px;
+}
+
+/* ================================================== section 6 starts here ======================================== */
+
+.section6{
+    background: linear-gradient(rgba(2, 2, 2, 0.8), rgba(2, 2, 2, 0.8)),url(../Images/events-bg.jpg) fixed;
+    background-position: center;
+    background-size: cover;
+    padding: 4% 0 7% 0;
+}
+
+.section6 .carousel-indicators{
+    margin-bottom: -3.5rem;
+}
+
+.section6 .carousel-indicators button{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.section6 .carousel .carousel-inner .titan2 h3{
+    font-family: 'Playfair Display', serif;
+    color: #cda45e;
+    font-weight: 600;
+}
+
+.section6 .carousel .carousel-inner .titan2 h4{
+    color: white;
+    font-weight: 900;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.section6 .carousel .carousel-inner .titan2 p{
+    color: white;
+    font-size: 15px;
+}
+
+/* ================================================== section 7 starts here ======================================== */
+
+.section7{
+    background-color: #0c0b09;
+}
+
+.reser{
+    color: #aaaaaa;
+    position: relative;
+    font-size: 14px;
+}
+
+.reser::after{
+    content: '';
+    width: 120px;
+    height: 1px;
+    background-color: #aaaaaa;
+    top: 50%;
+    left: 120px;
+    position: absolute;
+}
+
+                /* ------ data2 ------ */
+
+.section7 .inside .data2 input{
+    background-color: transparent;
+    outline: none;
+    border: 1px solid #cda45e7a;
+    padding: 7px 15px;
+    color: white;
+}
+
+.section7 .inside .data2 textarea{
+    background-color: transparent;
+    outline: none;
+    border: 1px solid #cda45e7a;
+    padding: 7px 15px;
+    color: white;
+}
+
+.book-2{
+    background-color: transparent;
+    border-radius: 30px;
+    font-size: 14px;
+    border: 2px solid #cda45e;
+    padding: 10px 30px !important;
+    background-color: #cda45e;
+}
+
+.book-2:hover{
+    background-color: #a08a61 !important;
+}
+
+/* ================================================== section 8 starts here ======================================== */
+
+.section8{
+    background-color: #1a1814;
+}
+
+
+/* ================================================== section 9 starts here ======================================== */
+
+.section9{
+    background-color: #0c0b09;
+}
+
+.section9 .data2 .col{
+    overflow: hidden;
+    border: 2px solid rgba(255, 255, 255, 0.317);
+}
+
+.section9 .data2 img{
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.section9 .data2 img:hover{
+    transform: scale(1.2);
+}
+
+/* ================================================== section 10 starts here ======================================== */
+
+.section10{
+    background-color: #0c0b09;
+}
+
+.section10 .data2 .chef{
+    position: relative;
+}
+
+.section10 .data2 .info{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.section10 .data2 .info h6{
+    font-family: 'Playfair Display', serif;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 550px;
+    transition: all 0.6s;
+}
+
+.section10 .data2 .info p{
+    font-size: 14px;
+    font-style: italic;
+    color: white;
+}
+
+.section10 .data2 .info i{
+    color: white;
+    margin-right: 4%;
+    font-size: 18px;
+    transition: all 0.2s;
+}
+
+.section10 .data2 .info i:hover{
+    color: #5c9f24;
+}
+
+.section10 .data2 .info:hover h6{
+    padding-top: 300px;
+}
+
+.section10 .data2 .info:hover{
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgb(0, 0, 0,1));
+}
+
+/* ================================================== section 11 starts here ======================================== */
+
+.section11{
+    background-color: #0c0b09;
+}
+
+.section11 iframe{
+    width: 100%;
+}
+
+.section11 .inside2 .circle{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-color: #cda45e;
+    display: grid;
+    place-items: center;
+}
+
+.section11 .inside2 .circle i{
+    font-size: 18px;
+    color: white;
+}
+
+.section11 .inside2 h6{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.section11 .inside2 p{
+    color: #aaaaaa;
+    font-size: 15px;
+}
+
+.section11 .inside2 .data2 input{
+    background-color: transparent;
+    outline: none;
+    border: 1px solid #aaaaaa6d;
+    padding: 7px 15px;
+    color: white;
+}
+
+.section11 .inside2 .data2 textarea{
+    background-color: transparent;
+    outline: none;
+    border: 1px solid #aaaaaa6d;
+    padding: 7px 15px;
+    color: white;
+}
+
+/* ================================================ section 12 starts here ================================================= */
+
+.section12{
+    background: #0c0b09;
+    border-top: 1px solid #cda45e23;
+    border-bottom: 1px solid #cda45e1f;
+}
+
+.section12 .inside .inn .here h4{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.section12 .inside .inn .here h6{
+    font-family: 'Playfair Display', serif;
+}
+
+.section12 .inside .inn .here h7{
+    font-family: 'Playfair Display', serif;
+}
+
+.section12 .inside .inn .here i{
+    font-size: 18px;
+    margin-right: 1%;
+    color: white;
+    background-color: #4444445f;
+    padding: 8px;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+.section12 .inside .inn .here i:hover{
+    background-color: white;
+    color: black;
+}
+
+.fa-chevron-right{
+    color: #5c9f24;
+    margin-right: 3%;
+    font-size: 16px;
+}
+
+.section12 .inside .inn .second h6{
+    margin: 10% 0;
+}
+
+.section12 .inside .inn .second a{
+    text-decoration: none;
+    color: white;
+}
+
+.section12 .inside .inn .third h6{
+    margin: 9% 0;
+}
+
+.section12 .inside .inn .third a{
+    text-decoration: none;
+    color: white;
+}
+
+.section12 .inn h7{
+    display: block;
+    margin-top: 7%;
+    font-size: 14px;
+}
+
+.fourth p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+.todo{
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+}
+
+.last input{
+    outline: none;
+    border: 1px solid #5c9f24;
+    background-color: transparent;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding: 7px 15px;
+    font-size: 14px;
+}
+
+.last .change{
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+/* ================================================== section 13 starts here ===================================================== */
+
+.section13{
+    background-color: #000000;
+    padding: 40px 0 25px 0;
+}
+
+.section13 h6 span{
+    font-weight: 600;
+}
+
+.section13 p{
+    font-size: 14px;
+}
+
+.section13 p span{
+    color: #5c9f24;
+}
+
+
+/* ==================================== MEDIA QUERY STARTS HERE ====================================== */
+
+@media only screen and (max-width:370px){
+    .section1 .inside1 .data1 h1{
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width:800px){
+    .section6 .carousel-indicators{
+        margin-bottom: -2rem;
+    }
+}
